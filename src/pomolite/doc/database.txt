@@ -1,0 +1,56 @@
+===============================
+PomoQT Database Design Document
+===============================
+
+Tables:
+    - db_info
+    - activity_type
+    - session
+    - user
+    - flags? (future)
+
++---------+
+| db_info |
++---------+
+
+Columns:
+    - version
+
++---------------+
+| activity_type |
++---------------+
+
+Columns:
+    - id
+    - short_name
+    - full_name
+    - description
+
++---------+
+| session |
++---------+
+
+Columns:
+    - id
+    - user_id
+    - activity_type_id
+    - start_time
+    - end_time
+    - notes
+
++------+
+| user |
++------+
+
+Columns:
+    - id
+    - full_name
+
++-------+
+| flags |
++-------+
+
+Columns:
+    - id
+    - name
+    - description
